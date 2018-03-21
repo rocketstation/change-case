@@ -14,7 +14,6 @@ npm i --save @rocketstation/change-case
 ## Usage
 
 ```javascript
-
 import * as changeCase from '@rocketstation/change-case'
 
 console.log(changeCase.cl('foo bar', ['foo', 'bar'], 'foo', 'bar')) // fooBarFooBarFooBar
