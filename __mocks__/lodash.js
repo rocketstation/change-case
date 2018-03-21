@@ -1,0 +1,5 @@
+export const camelCase = jest.fn(() => 'fooBar')
+export const kebabCase = jest.fn(() => 'foo-bar')
+export const snakeCase = jest.fn(() => 'foo_bar')
+export const toUpper = jest.fn()
+export const upperFirst = jest.fn()
