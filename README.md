@@ -28,6 +28,7 @@ console.log(changeCase.k('foo bar', ['foo', 'bar'], 'foo', 'bar')) // foo-bar-fo
 We were tired of writing this code again and again
 
 ### License
+
 Change Case is licensed under the [MIT License](http://opensource.org/licenses/MIT)
 
 Created by [RocketStation](http://rstation.io)
