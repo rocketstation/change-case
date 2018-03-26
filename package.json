@@ -29,7 +29,7 @@
   "license": "MIT",
   "main": "lib/index.js",
   "name": "@rocketstation/change-case",
-  "peerDependencies": {
+  "dependencies": {
     "lodash": "4"
   },
   "repository": {
