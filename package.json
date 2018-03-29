@@ -4,6 +4,9 @@
     "Oleksii Bilous <oleksiibilous@rstation.io> (https://rstation.io)",
     "Oleksii Pysanko <oleksiipysanko@rstation.io> (https://rstation.io)"
   ],
+  "dependencies": {
+    "lodash": "4"
+  },
   "description": "is based on lodash. It provides helpers to convert strings to kebab, snake lower & upper, camel lower & upper cases",
   "devDependencies": {
     "babel-cli": "6",
@@ -20,6 +23,13 @@
     "eslint-plugin-standard": "3",
     "jest": "22"
   },
+  "keywords": [
+    "lodash",
+    "camel case",
+    "kebab case",
+    "snake case",
+    "change case"
+  ],
   "engines": {
     "node": ">=9"
   },
@@ -29,9 +39,6 @@
   "license": "MIT",
   "main": "lib/index.js",
   "name": "@rocketstation/change-case",
-  "dependencies": {
-    "lodash": "4"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rocketstation/change-case.git"
