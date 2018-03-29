@@ -4,11 +4,8 @@ Change Case is based on [lodash](https://github.com/lodash/lodash). It provides 
 
 ## Installation
 
-1. Install [lodash](https://github.com/lodash/lodash#installation)
-
-2. Install changeCase
 ```
-npm i --save @rocketstation/change-case
+npm i @rocketstation/change-case
 ```
 
 ## Usage

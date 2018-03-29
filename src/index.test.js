@@ -12,31 +12,35 @@ jest.mock('lodash')
 
 
 it('changes to camel lower case', () => {
-  changeCase.cl('foo', 'bar')
+  changeCase.cl()
 
-  expect(camelCase).toBeCalledWith(['foo', 'bar'])
+  expect(camelCase).toBeCalled()
 })
+
 it('changes to camel upper case', () => {
-  changeCase.cu('foo', 'bar')
+  changeCase.cu()
 
-  expect(camelCase).toBeCalledWith(['foo', 'bar'])
-  expect(upperFirst).toBeCalledWith('fooBar')
+  expect(camelCase).toBeCalled()
+  expect(upperFirst).toBeCalled()
 })
+
 it('changes to snake lower case', () => {
-  changeCase.sl('foo', 'bar')
+  changeCase.sl()
 
-  expect(snakeCase).toBeCalledWith(['foo', 'bar'])
+  expect(snakeCase).toBeCalled()
 })
+
 it('changes to snake upper case', () => {
-  changeCase.su('foo', 'bar')
+  changeCase.su()
 
-  expect(snakeCase).toBeCalledWith(['foo', 'bar'])
-  expect(toUpper).toBeCalledWith('foo_bar')
+  expect(snakeCase).toBeCalled()
+  expect(toUpper).toBeCalled()
 })
-it('changes to kebab case', () => {
-  changeCase.k('foo', 'bar')
 
-  expect(kebabCase).toBeCalledWith(['foo', 'bar'])
+it('changes to kebab case', () => {
+  changeCase.k()
+
+  expect(kebabCase).toBeCalled()
 })
 
 
