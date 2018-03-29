@@ -23,18 +23,18 @@
     "eslint-plugin-standard": "3",
     "jest": "22"
   },
+  "engines": {
+    "node": ">=9"
+  },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "lodash",
     "camel case",
     "kebab case",
     "snake case",
     "change case"
-  ],
-  "engines": {
-    "node": ">=9"
-  },
-  "files": [
-    "lib"
   ],
   "license": "MIT",
   "main": "lib/index.js",
@@ -48,5 +48,5 @@
     "lint": "eslint src --fix --ignore-pattern *.test.js",
     "test": "jest src"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
