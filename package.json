@@ -5,9 +5,12 @@
     "Oleksii Pysanko <oleksiipysanko@rstation.io> (https://rstation.io)"
   ],
   "dependencies": {
-    "lodash": "4"
+    "just-camel-case": "4",
+    "just-kebab-case": "1",
+    "just-pascal-case": "1",
+    "just-snake-case": "1"
   },
-  "description": "is based on lodash. It provides helpers to convert strings to kebab, snake lower & upper, camel lower & upper cases",
+  "description": "it provides helpers to convert strings to kebab, snake lower & upper, camel lower & upper cases",
   "devDependencies": {
     "babel-cli": "6",
     "babel-core": "6",
@@ -30,7 +33,6 @@
     "lib"
   ],
   "keywords": [
-    "lodash",
     "camel case",
     "kebab case",
     "snake case",
@@ -48,5 +50,5 @@
     "lint": "eslint src --fix --ignore-pattern *.test.js",
     "test": "jest src"
   },
-  "version": "1.0.5"
+  "version": "1.1.0"
 }

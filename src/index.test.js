@@ -1,52 +1,11 @@
-import {
-  camelCase,
-  kebabCase,
-  snakeCase,
-  toUpper,
-  upperFirst,
-} from 'lodash'
+import * as changeCase from './index'
 
-import {
-  cl,
-  cu,
-  sl,
-  su,
-  k,
-} from './index'
+it('changes to camel lower case', () => { expect(changeCase.cl('foo bar')).toEqual('fooBar') })
 
-jest.mock('lodash')
+it('changes to camel upper case', () => { expect(changeCase.cu('foo bar')).toEqual('FooBar') })
 
-it('changes to camel lower case', () => {
-  cl()
+it('changes to snake lower case', () => { expect(changeCase.sl('foo bar')).toEqual('foo_bar') })
 
-  expect(camelCase).toBeCalled()
-})
+it('changes to snake upper case', () => { expect(changeCase.su('foo bar')).toEqual('FOO_BAR') })
 
-it('changes to camel upper case', () => {
-  cu()
-
-  expect(camelCase).toBeCalled()
-  expect(upperFirst).toBeCalled()
-})
-
-it('changes to snake lower case', () => {
-  sl()
-
-  expect(snakeCase).toBeCalled()
-})
-
-it('changes to snake upper case', () => {
-  su()
-
-  expect(snakeCase).toBeCalled()
-  expect(toUpper).toBeCalled()
-})
-
-it('changes to kebab case', () => {
-  k()
-
-  expect(kebabCase).toBeCalled()
-})
-
-
-
+it('changes to kebab case', () => { expect(changeCase.k('foo bar')).toEqual('foo-bar') })

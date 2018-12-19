@@ -2897,6 +2897,26 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+just-camel-case@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/just-camel-case/-/just-camel-case-4.0.2.tgz#dc1e9e19e4200bb91f482716726135c35e901ac3"
+  integrity sha512-df6QI/EIq+6uHe/wtaa9Qq7/pp4wr4pJC/r1+7XhVL6m5j03G6h9u9/rIZr8rDASX7CxwDPQnZjffCo2e6PRLw==
+
+just-kebab-case@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/just-kebab-case/-/just-kebab-case-1.1.0.tgz#ebe854fde84b0afa4e597fcd870b12eb3c026755"
+  integrity sha512-QkuwuBMQ9BQHMUEkAtIA4INLrkmnnveqlFB1oFi09gbU0wBdZo6tTnyxNWMR84zHxBuwK7GLAwqN8nrvVxOLTA==
+
+just-pascal-case@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/just-pascal-case/-/just-pascal-case-1.1.0.tgz#24f9a93614ecb58c41c180440bb2696138c72ffa"
+  integrity sha512-9WrLmpZ2wbt/k9ZAwp8MMc9/RqPRzUZZ+szWmAGFkas4+/z//+xYN8iUOBR2gmpiH8X5rJ+/yMvNFalMSKwmyg==
+
+just-snake-case@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/just-snake-case/-/just-snake-case-1.1.0.tgz#763316911c89a96b6f765bccddbe930d032939e0"
+  integrity sha512-yoz5c0ivDkYrrJm1qN1MLbNGl9BfUg3BwSDkPflVCW287OoV8JY3V6vUtdO1EhucPqayLS4SuhvLYyqJYk9Dmw==
+
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
@@ -2980,7 +3000,7 @@ lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
 
-lodash@4, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0:
+lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
