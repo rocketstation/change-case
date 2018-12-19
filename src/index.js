@@ -1,12 +1,22 @@
-import camel from 'just-camel-case'
-import kebab from 'just-kebab-case'
-import pascal from 'just-pascal-case'
-import snake from 'just-snake-case'
+const camel = require('just-camel-case')
+const kebab = require('just-kebab-case')
+const pascal = require('just-pascal-case')
+const snake = require('just-snake-case')
 
-const changeCase = (fn) => (...args) => fn(args.join(' '))
+function changeCase (fn) {
+  return function () {
+    const arr = []
 
-export const cl = changeCase(camel)
-export const cu = changeCase(pascal)
-export const sl = changeCase(snake)
-export const su = (v) => changeCase(snake)(v).toUpperCase()
-export const k = changeCase(kebab)
+    for (let arg = 0; arg < arguments.length; ++arg) arr.push(arguments[arg])
+
+    return fn(arr.join(' '))
+  }
+}
+
+module.exports = {
+  cl: changeCase(camel),
+  cu: changeCase(pascal),
+  sl: changeCase(snake),
+  su: (v) => changeCase(snake)(v).toUpperCase(),
+  k: changeCase(kebab),
+}
