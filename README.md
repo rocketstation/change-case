@@ -13,8 +13,8 @@ npm i @rocketstation/change-case
 ```javascript
 import * as changeCase from '@rocketstation/change-case'
 
-console.log(changeCase.cl('foo bar', ['foo', 'bar'], 'foo', 'bar')) // fooBarFooBarFooBar
-console.log(changeCase.cu('foo bar', ['foo', 'bar'], 'foo', 'bar')) // FooBarFooBarFooBar
+console.log(changeCase.c('foo bar', ['foo', 'bar'], 'foo', 'bar')) // fooBarFooBarFooBar
+console.log(changeCase.p('foo bar', ['foo', 'bar'], 'foo', 'bar')) // FooBarFooBarFooBar
 console.log(changeCase.sl('foo bar', ['foo', 'bar'], 'foo', 'bar')) // foo_bar_foo_bar_foo_bar
 console.log(changeCase.su('foo bar', ['foo', 'bar'], 'foo', 'bar')) // FOO_BAR_FOO_BAR_FOO_BAR
 console.log(changeCase.k('foo bar', ['foo', 'bar'], 'foo', 'bar')) // foo-bar-foo-bar-foo-bar

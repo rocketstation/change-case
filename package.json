@@ -1,5 +1,15 @@
 {
   "author": "Rocket Station <contact@rstation.io> (https://rstation.io)",
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Edge versions",
+    "Firefox ESR",
+    "Safari >= 9",
+    "last 2 iOS versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 FirefoxAndroid versions"
+  ],
   "contributors": [
     "Oleksii Bilous <oleksiibilous@rstation.io> (https://rstation.io)",
     "Oleksii Pysanko <oleksiipysanko@rstation.io> (https://rstation.io)"
@@ -12,43 +22,43 @@
   },
   "description": "it provides helpers to convert strings to kebab, snake lower & upper, camel lower & upper cases",
   "devDependencies": {
-    "babel-cli": "6",
-    "babel-core": "6",
-    "babel-eslint": "8",
-    "babel-plugin-transform-object-rest-spread": "6",
+    "@babel/cli": "7",
+    "@babel/core": "7",
+    "@babel/preset-env": "7",
+    "babel-eslint": "10",
     "babel-preset-env": "1",
-    "babel-preset-minify": "0.3",
-    "eslint": "4",
-    "eslint-config-standard": "11",
+    "babel-preset-minify": "0.5",
+    "cross-env": "5",
+    "eslint": "5",
+    "eslint-config-prettier": "3",
+    "eslint-config-standard": "12",
     "eslint-plugin-import": "2",
-    "eslint-plugin-node": "6",
-    "eslint-plugin-promise": "3",
-    "eslint-plugin-standard": "3",
-    "jest": "22"
-  },
-  "engines": {
-    "node": ">=9"
+    "eslint-plugin-node": "8",
+    "eslint-plugin-promise": "4",
+    "eslint-plugin-standard": "4",
+    "jest": "23",
+    "prettier": "1"
   },
   "files": [
-    "lib"
+    "build"
   ],
   "keywords": [
+    "change case",
     "camel case",
     "kebab case",
-    "snake case",
-    "change case"
+    "pascal case",
+    "snake case"
   ],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "build/index.js",
   "name": "@rocketstation/change-case",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rocketstation/change-case.git"
   },
   "scripts": {
-    "build": "rm -rf lib && babel src -d lib --ignore *.test.js",
-    "lint": "eslint src --fix --ignore-pattern *.test.js",
+    "build": "rm -rf build && cross-env NODE_ENV=production babel src -d build --ignore src/**/*.test.js",
     "test": "jest src"
   },
-  "version": "1.2.0"
+  "version": "2.0.0"
 }
