@@ -20,13 +20,12 @@
     "just-pascal-case": "1",
     "just-snake-case": "1"
   },
-  "description": "it provides helpers to convert strings to kebab, snake lower & upper, camel lower & upper cases",
+  "description": "it provides helpers to convert strings to camel, pascal, kebab, snake lower & upper cases",
   "devDependencies": {
     "@babel/cli": "7",
     "@babel/core": "7",
     "@babel/preset-env": "7",
     "babel-eslint": "10",
-    "babel-preset-env": "1",
     "babel-preset-minify": "0.5",
     "cross-env": "5",
     "eslint": "5",

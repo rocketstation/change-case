@@ -1,6 +1,6 @@
 # Change Case
 
-Change Case is based on [just](https://github.com/angus-c/just). It provides helpers to convert strings to kebab, snake lower & upper, camel lower & upper cases
+Change Case is based on [just](https://github.com/angus-c/just). It provides helpers to convert strings to camel, pascal, kebab, snake lower & upper cases
 
 ## Installation
 
