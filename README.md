@@ -11,13 +11,13 @@ npm i @rocketstation/change-case
 ## Usage
 
 ```javascript
-import * as changeCase from '@rocketstation/change-case'
+import * as cc from '@rocketstation/change-case'
 
-console.log(changeCase.c('foo bar', ['foo', 'bar'], 'foo', 'bar')) // fooBarFooBarFooBar
-console.log(changeCase.p('foo bar', ['foo', 'bar'], 'foo', 'bar')) // FooBarFooBarFooBar
-console.log(changeCase.sl('foo bar', ['foo', 'bar'], 'foo', 'bar')) // foo_bar_foo_bar_foo_bar
-console.log(changeCase.su('foo bar', ['foo', 'bar'], 'foo', 'bar')) // FOO_BAR_FOO_BAR_FOO_BAR
-console.log(changeCase.k('foo bar', ['foo', 'bar'], 'foo', 'bar')) // foo-bar-foo-bar-foo-bar
+console.log(cc.c('foo bar', ['foo', 'bar'], 'foo', 'bar')) // fooBarFooBarFooBar
+console.log(cc.p('foo bar', ['foo', 'bar'], 'foo', 'bar')) // FooBarFooBarFooBar
+console.log(cc.sl('foo bar', ['foo', 'bar'], 'foo', 'bar')) // foo_bar_foo_bar_foo_bar
+console.log(cc.su('foo bar', ['foo', 'bar'], 'foo', 'bar')) // FOO_BAR_FOO_BAR_FOO_BAR
+console.log(cc.k('foo bar', ['foo', 'bar'], 'foo', 'bar')) // foo-bar-foo-bar-foo-bar
 ```
 
 ## Motivation
